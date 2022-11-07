@@ -1,0 +1,3 @@
+﻿  2022_10_31_008_Practica_matriz.cpp
+C:\Users\Alumno\Desktop\Julio_Progra_No_borrar_pls\2022_10_31_008_Practica_matriz\2022_10_31_008_Practica_matriz.cpp(13,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  2022_10_31_008_Practica_matriz.vcxproj -> C:\Users\Alumno\Desktop\Julio_Progra_No_borrar_pls\2022_10_31_008_Practica_matriz\x64\Debug\2022_10_31_008_Practica_matriz.exe
