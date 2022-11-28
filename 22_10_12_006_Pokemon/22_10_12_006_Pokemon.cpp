@@ -12,7 +12,9 @@ int main()
     int elecc = 0, eleccene = 0;
     int vidap = 10, vidae = 10, danio = 3;
     bool vivos = true;
-
+    float probabilidad = static_cast<float>(1) / 2;
+    int danicrit = 0;
+    std::cout << "El enemigo siempre tendra un " << probabilidad * 100 << "% de atacar y un " << probabilidad * 100 << "% de curarse\n";
     std::cout << "Escribe el numero del pokemon que deseas \n1)Torchic\n2)Treecko\n3)Mudkip\n";
     std::cin >> elecc;
     switch (elecc) {
@@ -43,8 +45,22 @@ int main()
         std::cin >> elecc;
         switch (elecc) {
         case 1:
-            vidae -= danio;
-            std::cout << "Le habeis quitado " << danio << " al enemigo\n";
+            danicrit = 1 + rand() % (3);
+            std::cout << "Tienes un 33% de darle un golpe critico\n";
+            Sleep(700);
+            if (danicrit == 1) {
+                vidae -= 5;
+
+                std::cout << "Asestasteis un golpe critico!!!\n";
+                std::cout << "Le habeis quitado 5 de da;o al enemigo\n";
+                Sleep(700);
+            }
+            else {
+                vidae -= 3;
+                std::cout << "Le habeis quitado 3 de da;o al enemigo\n";
+                Sleep(700);
+            }
+        
             Sleep(600);
 
             break;
@@ -56,10 +72,25 @@ int main()
             break;
         }
         eleccene = 1 + rand() % (2);
+        
+        
+        Sleep(777);
         switch (eleccene) {
         case 1:
-            vidap -= 5;
-            std::cout << "Te hizo 5 de da;o\n";
+            danicrit = 1 + rand() % (3);
+            std::cout << "Tiene un 33% de darte un golpe critico\n";
+            Sleep(600);
+            if (danicrit == 1) {
+                vidap -= 5;
+
+                std::cout << "Te asesto un golpe critico!!!\n";
+                std::cout << "Te hizo 5 de da;o\n";
+                Sleep(700);
+            }
+            else {
+                vidap -= 3;
+                std::cout << "Te hizo 3 de da;o\n";
+            }
             Sleep(600);
             break;
         case 2:
