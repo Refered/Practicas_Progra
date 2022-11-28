@@ -4,12 +4,20 @@
 #include <iostream>
 #include<string>
 
+bool palindroma(std::string pal, int inicio, int fin) {
+
+    if (inicio>=)
+
+
+}
+
 
 
 
 int main()
 {
-    std::string = "";
+    std::string palabra = "";
+    bool pal = false;
     std::cout << "Hello World!\n";
 
 

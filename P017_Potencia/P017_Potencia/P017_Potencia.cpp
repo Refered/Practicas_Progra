@@ -19,8 +19,8 @@ int main()
     int numero = 0;
     int potencia = 0;
 
-    std::cout << "Pon tu numero\n";
-    std::cin >> numero;
+    
+    std::cout << "Pon tu numero\n";std::cin >> numero;
     std::cout << "Pon la potencia \n";
     std::cin >> potencia;
     std::cout << potenciarecursiva(numero, potencia);

@@ -10,6 +10,15 @@ int main()
 {
     int matriz[3][3];
     int randic = 0;
+    int largo = 0;
+    int ancho;
+
+    std::cout << "Ingresa el ancho de tu matriz\n";
+    std::cin >> ancho;
+    std::cout << "Ingresa el largo de tu matriz\n";
+    std::cin >> largo;
+    matriz;
+
     srand(time(NULL));
     for (int i = 0; i < (sizeof(matriz) / (sizeof(matriz[0]))); i++)
     {
